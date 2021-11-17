@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css" id="theme">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    a {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        ;
+    }
+</style>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/log.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" style="font-size: 25px;">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html">WORKING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#top">CALCULATOR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Feedback.html">FEEDBACK</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <center>
+    <div class="wrapper">
+        <div class="container">
+            <p style="font-size: 50px;margin-top: -50px;">Calculator</p>
+            <div style="border: 5px solid black;width: 750px;padding: 40px;border-radius: 20px;background-image: linear-gradient(to right, #f585ff,#95d8e9);">
+            <div class="first-row">
+                <input type="text" name="result" style="width: 480px;margin-right: 20px;" class="result" id="result" value="" placeholder="Input" readonly />
+                <button id="speak"><i style="font-size:30px;width: 60px;" class="fa">&#xf130;</i></button><br><br>
+                <p id="textarea" style="color:grey;font-size: 25px;line-height: 50px;border-radius: 10px;margin-right: 100px;">-- Output</p>
+                <button style="height: 50px;line-height: 20px;float: right;margin-top: -67px;font-size: 30px;width: 80px;margin-right: 35px;" id="clear" onclick="clearScreen()">C</button>
+            </div>
+
+            <div class="second-row">
+                <input type="button" value="1" onclick="displayScreen('1')" />
+                <input type="button" value="2" onclick="displayScreen('2')" />
+                <input type="button" value="3" onclick="displayScreen('3')" />
+                <input style="font-size:20px;" type="button" value="+" onclick="displayScreen('+')" />
+                <input type="button" value="sin" onclick="displayScreen('Math.sin')" />
+                <input type="button" value="cos" onclick="displayScreen('Math.cos')" />
+                <input type="button" value="tan" onclick="displayScreen('Math.tan')" />
+                <input type="button" value="√" onclick="displayScreen('Math.sqrt')" />
+            </div>
+
+            <div class="third-row">
+                <input type="button" value="4" onclick="displayScreen('4')" />
+                <input type="button" value="5" onclick="displayScreen('5')" />
+                <input type="button" value="6" onclick="displayScreen('6')" />
+                <input style="font-size:20px;" type="button" value="-" onclick="displayScreen('-')" />
+                <input type="button" value="log" onclick="displayScreen('Math.log')" />
+                <input type="button" value="e" onclick="displayScreen('Math.e')" />
+                <input type="button" value="x^y" onclick="displayScreen('**')" />
+                <input type="button" value="ln" onclick="displayScreen('Math.logn')" />
+            </div>
+
+            <div class="fourth-row">
+                <input type="button" value="7" onclick="displayScreen('7')" />
+                <input type="button" value="8" onclick="displayScreen('8')" />
+                <input type="button" value="9" onclick="displayScreen('9')" />
+                <input style="font-size:20px;" type="button" value="*" onclick="displayScreen('*')" />
+                <input type="button" value="π" onclick="displayScreen('3.14')" />
+                <input type="button" value="3√" onclick="displayScreen('Math.cbrt')" />
+                <input type="button" value="abs" onclick="displayScreen('Math.abs')" />
+                <input type="button" value="ceil" onclick="displayScreen('Math.ceil')" />
+            </div>
+
+            <div class="fifth-row">
+                <input type="button" value="=" onclick="result()" />
+                <input type="button" value="0" onclick="displayScreen('(0)')" />
+                <input type="button" value="." onclick="displayScreen('.')" />
+                <input type="button" value="/" onclick="displayScreen('/')" />
+                <input type="button" value="floor" onclick="displayScreen('Math.floor')" />
+                <input type="button" value="asin" onclick="displayScreen('Math.asin')" />
+                <input type="button" value="acos" onclick="displayScreen('Math.acos')" />
+                <input type="button" value="atan" onclick="displayScreen('Math.atan')" />
+
+            </div>
+        </div>
+        </div>
+    </div>
+</center>
+    <section id="footer">
+        <p class="copyright">Copyright &copy; 2020-2021 | All Rights Reserved</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

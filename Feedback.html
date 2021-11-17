@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+    label {
+        width: 100px;
+        display: inline-block;
+        margin-left: 100px;
+        font-size: 23px;
+    }
+
+    #form {
+        border-radius: 10px;
+        background-image: linear-gradient(to right, rgb(155, 134, 250), rgb(250, 132, 132));
+        color: white;
+        width: 55%;
+        height: 520px;
+        padding: 10px;
+        border: 5px solid black;
+        text-align: left;
+        margin: 85px;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #btn {
+        width: 300px;
+        margin-left: 90px;
+        border-radius: 8px;
+        border: 2px solid black;
+        padding: 8px;
+        background-color: rgb(245, 185, 73);
+    }
+
+    input {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 8px;
+        margin-left: 50px;
+    }
+
+    #btn:hover {
+        background-color: rgb(255, 108, 55);
+    }
+</style>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/log.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" style="font-size: 25px;">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html">WORKING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cal.html">CALCULATOR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Feedback.html">FEEDBACK</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <center>
+        <div id="form">
+            <h1 style="font-size: 40px;">FeedBack Form</h1>
+            <form>
+                <br>
+                <label>Name:</label>
+                <input type="text" style="width: 500px" name="name" placeholder="Enter Your Name">
+                <br>
+                <br>
+                <label>Email:</label>
+                <input type="email" style="width: 500px" name="email" placeholder="Enter Your Email Id">
+                <br>
+                <br>
+                <label>Country:</label>
+                <select style="border: 2px solid black;width: 500px;border-radius: 4px;padding: 8px;margin-left: 47px;">
+                    <option>Select</option>
+                    <option>India</option>
+                    <option>London</option>
+                    <option>Paris</option>
+                </select>
+                <br>
+                <br>
+                <label>Message:</label>
+                <input type="text" style="height: 80px; width: 500px;" name="message" placeholder="Write Your Message">
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Submit" id="btn" style="font-weight: bold;font-size: 20px;">
+                <input type="reset" value="Reset" id="btn" style="font-weight: bold;font-size: 20px;">
+            </form>
+        </div>
+    </center>
+    <section id="footer">
+        <p class="copyright">Copyright &copy; 2020-2021 | All Rights Reserved</p>
+    </section>
+
+</body>
+
+</html>

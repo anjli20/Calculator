@@ -1,0 +1,158 @@
+table{
+margin:0px 5px 5px 5px;}
+.top{
+font-size:18px;
+height: 40px;
+width:50px;
+background-color:lightGray;
+box-shadow: insert 5px 5px 5px #a89,inet -5px -5px 5px #867
+}
+.tp{
+font-size:20px;
+height: 40px;
+width:50px;
+background-color:lightSlateGray;
+box-shadow: insert 5px 5px 5px #a89,inet -5px -5px 5px #867
+}
+.C{
+font-size:50px;
+height: 70px;
+width:50px;
+background-color:white;
+box-shadow: inet 5px 5px 5px #a89,inet -5px -5px 5px #867;
+}
+.f{
+box-shadow:-10px 10px 10px silver
+border: 10px #ddd inset;
+border-radius: 5px;
+padding: 10px;
+width: 100px;
+}
+.div{
+border:5px #6bc ridge;
+border-radius:10px;
+margin: 0px 5px 5px 5px;
+padding-top: 0px;
+width:285px;
+box-shadow:-10px 10px 10px silver;
+background-color:lightGray;
+font-size:11px;
+color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f7fc;
+    transition: 1s all;
+}
+
+.container
+{
+    width: 600px;
+
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 1.5%;
+    color: rgb(82, 78, 78);
+}
+
+.result
+{
+    width: 440px;
+    height:2px;
+}
+
+input
+{
+    padding: 25px;
+    color: rgb(87, 87, 87);
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 70px;
+    height:70px;
+}
+
+.first-row, .second-row, .third-row, .fourth-row, .fifth-row
+{
+    margin-bottom: 3px;
+
+}
+
+input[type="text"]
+{
+    background-color: rgb(255, 255, 255);
+    width: 440px;
+}
+input[type="button"]
+{
+    color: rgb(122, 122, 122);
+    border-radius:35px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+
+}
+input[type="button"]:hover
+{
+    background-color: rgb(37, 35, 39);
+    color: #fff;
+}
+#clear
+{
+    background-color: rgb(255,224,123);
+    border-radius:15px;
+    align:center;
+    color: white;
+}
+#clear:hover{
+    background-color: rgb(255, 138, 95);
+}
+
+#speak
+{
+    background-color: rgb(255, 224, 123);
+    border-radius:15px;
+    align:center;
+    border:2px;
+}
+#speak:hover{
+    background-color: rgb(255, 138, 95);
+}
+
+button
+{
+    border: none;
+    background-color: rgb(41, 38, 38);
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#textarea{
+  background-color:white;
+  width:480px;
+  height:50px;
+
+}
